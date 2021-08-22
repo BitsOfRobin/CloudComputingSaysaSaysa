@@ -1,0 +1,22 @@
+﻿.deleteCustomerDiv{
+    text-align:center;
+}
+
+.deleteCustomerP{
+    font-size:25pt;
+}
+
+.deleteCustomerTable {
+    font-size: 16pt;
+}
+
+.deleteCustomerP {
+    font-weight: bold;
+}
+
+.deleteCustomerTable {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+

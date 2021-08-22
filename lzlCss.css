@@ -1,0 +1,139 @@
+
+#lzldiv #lzlAddDiv {
+    background-color: gainsboro;
+    width: 100%;
+    height: 100%;
+    margin: -10px;
+    /*  padding-left: 0;
+    padding-right: 0;*/
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    /*vertical-align: middle;*/
+    /*margin-bottom:1000px;*/
+    font-size:xx-large;
+}
+
+
+/*#image1 {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;*/
+    /*left: 100px;*/
+/*}*/
+
+
+
+/*#tablez {
+    float: right;*/
+    /*position: absolute;*/
+    /*align-items: center;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;*/
+   /* margin-bottom: 250px;
+    margin-left: 250px;*/
+    /*margin-right: 2500px;*/
+  /*  margin-top: 250px;*/
+/*}*/
+
+#tl1, #n1, #tl2, #n2, #tl3, #n3 {
+    font-family: Calibri;
+    color: white;
+}
+
+
+
+#us {
+    background-image: url("/assets/bck1.jpg");
+    width: 100.5%;
+    height:780px;
+    /* display: flex;*/
+    margin: -10px;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+#tableus{
+
+    position:fixed;
+   
+}
+
+
+#tableus #tablez #tablezAdd{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   width:100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+    width:100%;
+    height:100%;
+}
+
+
+.labelzl {
+    width: 100px;
+    height: 40px;
+    
+    color: black;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    border-radius: 5em;
+    box-sizing: border-box;
+    opacity: 0.9;
+}
+
+.labelzl1 {
+    width: 100px;
+    height: 40px;
+    color: black;
+    font: inherit;
+    font-size:xx-large;
+    
+    border: 0;
+    outline: 0;
+    border-radius: 5em;
+    box-sizing: border-box;
+    opacity: 0.9;
+}
+
+
+
+#tablep {
+    text-align: center;
+    /*margin:100px;*/
+    /*margin-left: 100px;*/
+   /* margin-right: auto;*/
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.button {
+    width: 140px;
+    
+}
+
+
+.error {
+    color: red;
+    background-image: url(Image/error.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}

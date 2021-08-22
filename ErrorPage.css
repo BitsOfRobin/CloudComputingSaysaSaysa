@@ -1,0 +1,35 @@
+﻿.Setting{
+    position:absolute;
+    width:200px;
+    height:200px;
+    margin-top:5%;
+    margin-left:40%
+    
+}
+
+.container {
+    align-content: center;
+    position: absolute;
+    background-image: url('../assets/Errorbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1540px;
+    height: 600px;
+}
+
+.ErrorMessage{
+    position:absolute;
+    margin-top:20%;
+    margin-left:20%;
+    font-family:'Times New Roman', Times, serif;
+    font-size:150%;
+    
+}
+
+.Homepage {
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 37.5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+}

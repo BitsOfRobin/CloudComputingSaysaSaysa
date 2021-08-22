@@ -1,0 +1,38 @@
+﻿.gv {
+    width: 100%;
+    margin: 0px;
+    font: inherit;
+    border-collapse: collapse;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: black;
+    border-style: none;
+    border-width: 0px;
+}
+
+    .gv th {
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+        background-color: black;
+        font-size: 18pt;
+    }
+
+
+    .gv td {
+        background-color: white;
+        color: black;
+        padding: 30px;
+        text-align: center;
+        font-size: 18pt;
+    }
+
+.label {
+    padding-left: 650px;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.search {
+    font-size: 16pt;
+}

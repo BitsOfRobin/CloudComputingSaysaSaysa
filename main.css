@@ -1,0 +1,247 @@
+﻿
+body {
+    font: 11pt Calibri;
+    margin: 0px;
+    width: 100%;
+    background-color: black;
+}
+
+input:focus{
+    outline:none;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* Header */
+#header1 {
+    padding: 10px;
+    min-height: 50px;
+}
+
+#header1 div {
+    display: block;
+    float: left;
+}
+
+#header1 #logo1 {
+    width: 125px;
+}
+
+#header1 #Logo {
+    height: 50px;
+    width: 125px;
+}
+
+#header1 #navigation1 {
+    padding: 0% 2%;
+    width: 40%;
+}
+
+#header1 .Menu1 {
+    border-radius: 10px;
+    margin: 0 auto;
+    background: black;
+    padding: 0px 10px;
+}
+
+#header1 .Menu1 ul {
+    list-style: none;
+    text-align: center;
+}
+
+#header1 .Menu1 ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#header1 .Menu1 ul li a {
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    outline: none;
+}
+
+
+#header1 .Menu1 ul li a, #header1 .Menu1 ul li a:after, #header1 .Menu1 ul li a:before {
+    transition: all .5s;
+}
+
+#header1 .Menu1 ul li a:hover {
+    color: #555;
+}
+
+#header1 .Menu1 ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+#header1 .Menu1 ul li a:hover:after {
+    height: 3px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+#header1 #search1 {
+    width: 30%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border-radius: 6px;
+    height: 20px;
+    background-color: white;
+    background-image: url('/assets/searchicon.png');
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#header1 #search1:hover {
+    width: 100%;
+}
+
+#header1 #searchcol1 {
+    width: 25%;
+    padding: 10px;
+}
+
+#header1 #imgbtn1 {
+    overflow: hidden;
+    float: right;
+    padding: 0px 15px;
+    width: 15%;
+}
+
+#header1 .imagebtn {
+    float: right;
+    height: 24px;
+    width: 24px;
+    padding: 10px;
+}
+
+#header1 .imagebtn:hover {
+    filter: contrast(30%);
+}
+
+#header1 .dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+#header1 .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 50px;
+    right: 3%;
+}
+
+#header1 .dropdown-content a {
+    display: block;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+}
+
+#header1 .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+#header1 .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media only screen and (max-width: 1150px) {
+    #header1 .Menu1 ul li a {
+        padding: 15px 5px;
+    }
+
+    #header1 #searchcol1 {
+        width: 20%;
+    }
+
+    #header1 #search1:hover {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #header1 .Menu1 ul li a {
+        font-size: 12px;
+    }
+
+    #header1 #search1:hover {
+        width: 70%;
+    }
+
+    #header1 .imagebtn {
+        padding: 10px 8px;
+    }
+
+    #header1 #imgbtn1 {
+        width: 16%;
+    }
+
+    #header1 #searchcol1 {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    #header1 .Menu1 ul li a {
+        padding: 15px 0px;
+    }
+}
+
+/* Content */
+.content {
+    background-color: white;
+    min-height: calc(100vh - 200px);
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+    height:70px;
+    color:white;
+}
+
+/* Button */
+.button {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    border-radius: 5em;
+    box-sizing: border-box;
+    opacity: 0.6;
+    text-align: center;
+    padding: 11px 0px;
+}
+
+.button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+

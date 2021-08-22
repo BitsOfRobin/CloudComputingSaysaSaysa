@@ -1,0 +1,89 @@
+﻿.cart-table {
+    width:100%;
+    margin : 0px;
+    font: 18px;
+    border-collapse: collapse;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    border-top-color:black;
+    border-style:none;
+    border-width:0px;
+}
+    .cart-table th {
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+        background-color: black;
+    }
+
+
+    .cart-table td {
+        background-color: white;
+        color: black;
+        font-size:18px;
+        padding: 30px;
+        text-align:center;
+    }
+
+.qty-button {
+    font: inherit;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 2px 12px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+    .qty-button:hover {
+        opacity: 1;
+    }
+
+.qty-txt {
+    font: inherit;
+    width: 25px;
+    text-align:center;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.imgBg {
+    height: 60px;
+    line-height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    display: inline-block;
+}
+
+.imagebtn {
+    padding-top: 11px;
+    height: 38px;
+    width: 38px;
+}
+
+.ImageField {
+   max-height: 1000px; 
+   max-width: 900px; 
+   height: auto;
+   width: auto;
+}

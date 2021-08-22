@@ -1,0 +1,21 @@
+﻿.deleteArtistDiv {
+    text-align: center;
+}
+
+.deleteArtistP{
+    font-size: 25pt;
+}
+
+.deleteArtistTable {
+    font-size: 16pt;
+}
+
+.deleteArtistP {
+    font-weight: bold;
+}
+
+.deleteArtistTable {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}

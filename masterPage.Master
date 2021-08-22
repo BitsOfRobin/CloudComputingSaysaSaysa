@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPage.master.cs" Inherits="Cloud.masterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/Main.css" rel="stylesheet" />
+
+
+</head>
+<body >
+    <form id="form1" runat="server">
+        <div class="pageHeader">
+            <div class="pageHeaderContent">
+                 <div class="headerLogo">
+                      <asp:HyperLink runat="server"><img src="/img/CloudLogo2.png" alt="Logo" /></asp:HyperLink>
+                 </div>
+                <div class="headerTag">
+                    <asp:HyperLink runat="server" Text=""></asp:HyperLink>                    
+                    <asp:HyperLink runat="server" Text=""></asp:HyperLink>
+                </div>
+                <div class="headerButton">
+                        <%if (Session["currentLogID"] != null)/*If NOT Login*/
+                            {%>
+                    
+                    <asp:HyperLink runat="server" Text="Login"><i class='fa fa-shopping-cart fa-lg' aria-hidden="true"></i></asp:HyperLink>
+                     <%}%>  
+                    <div class="userDropDown">
+                        <i class='fa fa-user fa-lg'  aria-hidden="true"></i>
+                       
+                        <%if (Session["currentLogID"] == null)/*If NOT Login*/
+                            {%>
+                          <div class="userDropDown-content">
+                            <asp:HyperLink runat="server" NavigateUrl="view/Login.aspx" Text="Login"></asp:HyperLink>
+                          </div>
+                        <%}
+                        else
+                        {%> 
+                            <div class="userLoginDropDown-content" >
+                                <span>HI, <br /><%=Session["currentLogName"]%>!</span>
+                                <asp:HyperLink runat="server" NavigateUrl="view/purchaseHistory.aspx" Text="Your Order"></asp:HyperLink>
+                                <%if((string)Session["currentIsArtist"] == "2") /*isArtists*/
+                                    {%> 
+                                           <asp:HyperLink runat="server" NavigateUrl="view/viewArtistArtPage.aspx" Text="Your Profile"></asp:HyperLink> 
+                                    <%}
+                                %>
+
+
+                                <asp:Button ID="btnLogout" class="btn" runat="server" Text="Logout"/>
+                            </div>
+                        <%}%>     
+                    </div>
+                    
+                </div>
+            </div>
+            
+                <div class="pageOption">
+                    <div class="headerOption">
+                        <asp:HyperLink runat="server" Text="Home"></asp:HyperLink>   
+                        <asp:HyperLink runat="server" Text="Cloth"></asp:HyperLink>                    
+                        <asp:HyperLink runat="server" Text="About Us"></asp:HyperLink>
+                        <asp:HyperLink runat="server" Text="Sale"></asp:HyperLink>
+                    </div>
+                    
+                </div>
+            
+        </div>
+        <div class="pageContent">
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="pageFooter">
+            
+            <div class="pageFooterContent">
+            <table>
+                <tr class="tableHeader">
+                    <td><h2>Customer Care</h2></td>
+                    <td><h2>Legal</h2></td>
+                    <td style="width:90px"><h2>Others</h2></td>
+                </tr>
+                <tr>
+                    <td><asp:HyperLink runat="server" Text="FAQ"></asp:HyperLink></td>
+                    <td><asp:HyperLink runat="server" Text="Terms and Conditions"></asp:HyperLink></td>
+                    <td style="width:90px"><asp:HyperLink runat="server" Text="How to Buy?"></asp:HyperLink></td>
+                   
+                </tr>
+                <tr>
+                    <td><asp:HyperLink runat="server"  Text="Contact Us"></asp:HyperLink></td>
+                    <td><asp:HyperLink runat="server"  Text="Privacy and Policies"></asp:HyperLink></td>
+                    <td style="width:90px"><asp:HyperLink runat="server" Text="How to Sales?"></asp:HyperLink></td>
+                </tr>
+                <tr>
+                    <td><asp:HyperLink runat="server" Text="About Us"></asp:HyperLink></td>
+                    <td></td>
+                    <td style="width:80px"></td>
+                </tr>
+            </table>
+
+
+
+                
+            </div>
+            <div class="footerCopyright">
+                <table>
+                    <tr>
+                        
+                        <td style="text-align:center;">Payment Method : 
+
+                            <img src="/img/mastercard.png" alt="masterCard" />
+                            <img src="/img/paypal.png" alt="paypal" />
+                            <img src="/img/visa.png" alt="visa" />
+                        </td>
+
+                        
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
