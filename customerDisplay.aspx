@@ -238,6 +238,8 @@
 
 
             <asp:DropDownList ID="ddlStdQty" Visible="true" runat="server" ></asp:DropDownList>
+                     
+            <asp:Button ID="btnAddToCart" runat="server" Text="Add To Cart" />
 
              </asp:TableCell>
 
