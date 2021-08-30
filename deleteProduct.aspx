@@ -131,7 +131,7 @@
 
         </asp:TableRow>
 
-          <asp:TableRow  width="1400px" >
+          <%--<asp:TableRow  width="1400px" >
 
 
              <asp:TableCell HorizontalAlign="Right" width="200px">
@@ -149,11 +149,11 @@
 
              </asp:TableCell>
 
-        </asp:TableRow>
+        </asp:TableRow>--%>
 
 
            
-         <asp:TableRow  width="1400px" >
+       <%--  <asp:TableRow  width="1400px" >
 
 
              <asp:TableCell HorizontalAlign="Right" width="200px">
@@ -171,7 +171,7 @@
 
              </asp:TableCell>
 
-        </asp:TableRow>
+        </asp:TableRow>--%>
 
 
                <asp:TableRow  width="1400px" >

@@ -39,7 +39,7 @@ namespace asn
     public partial class customerDisplay : System.Web.UI.Page
     {
 
-        string cs = "Server=tcp:zleandb.database.windows.net,1433;Initial Catalog=zleandb;Persist Security Info=False;User ID=zleandb;Password=Martindb5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
+        string cs = "Server=tcp:zleandb.database.windows.net,1433;Initial Catalog=ZLeanDatabase;Persist Security Info=False;User ID=zlean;Password=Martindb5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
 
         //static string proIdFind;  ///Dummy Data can work eg, P15
         //static string cartFind;  ///Dummy Data can work eg, P15
@@ -151,7 +151,7 @@ namespace asn
                         descri = string.Format("{0}", dr["Descri"]);
                         pic = ((Byte[])dr["PicUrl"]);
                         qty = string.Format("{0}", dr["AvailableQty"]);
-                        arId = string.Format("{0}", dr["ArtistId"]);
+                        //arId = string.Format("{0}", dr["ArtistId"]);
                         //id = string.Format("{0}", dr["ProductId"]);
 
                     }
@@ -174,7 +174,7 @@ namespace asn
                     lblzlDes.Text = descri;
                     lblzlDate.Text = date;
                     lblzlQty.Text = qty;
-                    lblzlArId.Text = arId;
+                    //lblzlArId.Text = arId;
                     lblzlProId.Text = proIdFind;
                     //string imgPath = Path.GetPathRoot(pic);
 
@@ -521,11 +521,11 @@ namespace asn
                     //}
 
                     //drPro.Close();
-                   
 
 
 
 
+                  
                     //int[] randomNum= new int[5];
                     for (int i=0;i<5;i++)
                     {
@@ -533,11 +533,12 @@ namespace asn
 
                        int num = rnd.Next(0,sameArt.Count);
 
+                       
                         if(!randomNum.Contains(num))
                         {
                             randomNum.Insert(i,num);
 
-
+                        
                         }
 
                     }
@@ -642,7 +643,7 @@ namespace asn
                 else
                 {
 
-                    Response.Redirect("Homepage.aspx?");
+                    Response.Redirect("displayAllProduct.aspx?");
 
 
                 }

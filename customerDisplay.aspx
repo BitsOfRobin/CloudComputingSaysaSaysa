@@ -129,7 +129,7 @@
 
         </asp:TableRow>
 
-          <asp:TableRow  width="1400px" >
+         <%-- <asp:TableRow  width="1400px" >
 
 
              <asp:TableCell HorizontalAlign="Right" width="200px">
@@ -147,11 +147,11 @@
 
              </asp:TableCell>
 
-        </asp:TableRow>
+        </asp:TableRow>--%>
 
 
            
-         <asp:TableRow  width="1400px" >
+         <%--<asp:TableRow  width="1400px" >
 
 
              <asp:TableCell HorizontalAlign="Right" width="200px">
@@ -169,7 +169,7 @@
 
              </asp:TableCell>
 
-        </asp:TableRow>
+        </asp:TableRow>--%>
 
 
                <asp:TableRow  width="1400px" >
@@ -232,14 +232,14 @@
 
              <asp:TableCell >
                 
-                  <%--<asp:TableCell HorizontalAlign="Right" width="200px">
-             <asp:Button ID="btncart" runat="server" Text="Add to Cart" BackColor="Black" ForeColor="White" CssClass="button" OnCommand="btnWishList_Command" CommandName="Cart" Visible="true"  />
-             </asp:TableCell>--%>
+                  <asp:TableCell HorizontalAlign="Left" width="200px">
+             <asp:Button ID="btncart" runat="server" Text="Add to Cart" BackColor="Black" ForeColor="White" CssClass="button"  Visible="true"  />
+             </asp:TableCell>
 
+
+               <%--  OnCommand="btnWishList_Command" CommandName="Cart"--%>
 
             <asp:DropDownList ID="ddlStdQty" Visible="true" runat="server" ></asp:DropDownList>
-                     
-            <asp:Button ID="btnAddToCart" runat="server" Text="Add To Cart" />
 
              </asp:TableCell>
 

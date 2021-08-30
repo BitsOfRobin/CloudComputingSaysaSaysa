@@ -14,7 +14,7 @@ namespace Cloud
 {
     public partial class displayAllShopProduct : System.Web.UI.Page
     {
-        string strConnString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        string strConnString = "Server=tcp:zleandb.database.windows.net,1433;Initial Catalog=ZLeanDatabase;Persist Security Info=False;User ID=zlean;Password=Martindb5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
         protected void Page_Load(object sender, EventArgs e)
         {
             showCloths();
@@ -98,7 +98,12 @@ namespace Cloud
 
         protected void deleteBtn_Click(object sender, EventArgs e)
         {
-           // Response.Redirect("deleteProduct.aspx");
+
+          
+
+
+
+            // Response.Redirect("deleteProduct.aspx");
 
         }
         protected void editBtn_Click(object sender, EventArgs e)

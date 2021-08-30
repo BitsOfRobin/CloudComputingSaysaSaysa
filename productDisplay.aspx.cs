@@ -11,7 +11,7 @@ namespace asn
 {
     public partial class testing : System.Web.UI.Page
     {
-        string cs = "Server=tcp:zleandb.database.windows.net,1433;Initial Catalog=zleandb;Persist Security Info=False;User ID=zleandb;Password=Martindb5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
+        string cs =  "Server=tcp:zleandb.database.windows.net,1433;Initial Catalog = ZLeanDatabase; Persist Security Info=False;User ID = zlean; Password=Martindb5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30";
         //static string proIdFound;
         private Byte[] pic;
         //public static void displayParam(string idPass)

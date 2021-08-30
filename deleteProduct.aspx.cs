@@ -10,7 +10,7 @@ namespace asn
 {
     public partial class deleteProduct : System.Web.UI.Page
     {
-        string cs = "Server=tcp:zleandb.database.windows.net,1433;Initial Catalog=zleandb;Persist Security Info=False;User ID=zleandb;Password=Martindb5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
+        string cs = "Server=tcp:zleandb.database.windows.net,1433;Initial Catalog=ZLeanDatabase;Persist Security Info=False;User ID=zlean;Password=Martindb5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
         //static string proIdFind;  //// uncomment this pass the productId dynamically here
         //public static void displayParam(string idPass)
         //{
@@ -58,7 +58,7 @@ namespace asn
                     lblzlDes.Text = descri;
                     lblzlDate.Text = date;
                     lblzlQty.Text = qty;
-                    lblzlArId.Text = arId;
+                    //lblzlArId.Text = arId;
                     lblzlProId.Text = proIdFind;
                     //string imgPath = Path.GetPathRoot(pic);
                     //imgDisplay.ImageUrl= "~/ assets / bck.jpg" ;
@@ -133,11 +133,11 @@ namespace asn
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-            Response.Redirect("Success.aspx?type=deleteProduct");
+            Response.Redirect("displayAllShopProduct.aspx");
         }
         protected void btnccl_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Success.aspx?type=deleteProduct");
+            Response.Redirect("displayAllShopProduct.aspx");
         }
     }
 }

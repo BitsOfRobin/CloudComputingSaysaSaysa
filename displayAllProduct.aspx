@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" CodeBehind="displayAllProduct.aspx.cs" Inherits="Cloud.displayAllProduct" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="masterPage.Master" AutoEventWireup="true" CodeBehind="displayAllProduct.aspx.cs" Inherits="Cloud.displayAllProduct" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <style>
         #container {
@@ -78,7 +78,7 @@
     <table style="background-color:white; width:250px;" >  
     <tr>  
         <td >  
-            <asp:HyperLink runat="server" ID="HyperLink1"  Text='<%#Eval("Name").ToString().Length>15? Eval("Name").ToString().Substring(0,15) + "...": Eval("Name")  %>' style="font-family:Calibri;font-size:28px;color:#666666;margin-left:10px;font-weight:bold;text-transform:capitalize;text-decoration:none;" NavigateUrl='<%# Eval("ProductId","testing.aspx?ProductId={0}") %>'/>
+            <asp:HyperLink runat="server" ID="HyperLink1"  Text='<%#Eval("Name").ToString().Length>15? Eval("Name").ToString().Substring(0,15) + "...": Eval("Name")  %>' style="font-family:Calibri;font-size:28px;color:#666666;margin-left:10px;font-weight:bold;text-transform:capitalize;text-decoration:none;" NavigateUrl='<%# Eval("ProductId","customerDisplay.aspx?ProductId={0}") %>'/>
         
         <%--<asp:Label ID="Labelname" runat="server" Text='<%#Eval("name") %>' Font-Bold="true" Font-Names="Calibri" Font-Size="24px" ForeColor="#6F707A" Style=" margin-left:12px;"/>--%>  
         </td> 

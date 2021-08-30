@@ -12,7 +12,8 @@ namespace asn.html
 {
     public partial class addProduct : System.Web.UI.Page
     {
-        string cs = "Server=tcp:zleandb.database.windows.net,1433;Initial Catalog=zleandb;Persist Security Info=False;User ID=zleandb;Password=Martindb5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
+        string cs = "Server=tcp:zleandb.database.windows.net,1433;Initial Catalog=ZLeanDatabase;Persist Security Info=False;User ID=zlean;Password=Martindb5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
+
 
         //static string arIdFound;
         //static string arFound;
@@ -72,7 +73,9 @@ namespace asn.html
 
         //public static string paramPass(string idPass )
         //{
-        //    testing.displayParam(idPass);
+        //
+        //
+        //    .displayParam(idPass);
 
         //    return idPass;
         //}

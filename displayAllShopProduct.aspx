@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterPage.Master" AutoEventWireup="true" CodeBehind="displayAllShopProduct.aspx.cs" Inherits="Cloud.displayAllShopProduct" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="masterPage.Master" AutoEventWireup="true" CodeBehind="displayAllShopProduct.aspx.cs" Inherits="Cloud.displayAllShopProduct" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         #container {
@@ -77,8 +77,8 @@
     <table style="background-color:white; width:250px;" >  
     <tr>  
         <td >  
-            <%--<asp:HyperLink runat="server" ID="HyperLink1"  Text='<%#Eval("Name").ToString().Length>15? Eval("Name").ToString().Substring(0,15) + "...": Eval("Name")  %>' style="font-family:Calibri;font-size:28px;color:#666666;margin-left:10px;font-weight:bold;text-transform:capitalize;text-decoration:none;" NavigateUrl='<%# Eval("ProductId","testing.aspx?ProductId={0}") %>'/>--%>
-            <asp:Label ID="HyperLink1" runat="server" Text='<%#Eval("Name").ToString().Length>15? Eval("Name").ToString().Substring(0,15) + "...": Eval("Name")  %>' style="font-family:Calibri;font-size:28px;color:#666666;margin-left:10px;font-weight:bold;text-transform:capitalize;text-decoration:none;"/>
+            <asp:HyperLink runat="server" ID="HyperLink1"  Text='<%#Eval("Name").ToString().Length>15? Eval("Name").ToString().Substring(0,15) + "...": Eval("Name")  %>' style="font-family:Calibri;font-size:28px;color:#666666;margin-left:10px;font-weight:bold;text-transform:capitalize;text-decoration:none;" NavigateUrl='<%# Eval("ProductId","productDisplay.aspx?ProductId={0}") %>'/>
+           <%-- <asp:Label ID="HyperLink1" runat="server" Text='<%#Eval("Name").ToString().Length>15? Eval("Name").ToString().Substring(0,15) + "...": Eval("Name")  %>' style="font-family:Calibri;font-size:28px;color:#666666;margin-left:10px;font-weight:bold;text-transform:capitalize;text-decoration:none;"/>--%>
         <%--<asp:Label ID="Labelname" runat="server" Text='<%#Eval("name") %>' Font-Bold="true" Font-Names="Calibri" Font-Size="24px" ForeColor="#6F707A" Style=" margin-left:12px;"/>--%>  
         </td> 
     </tr>
@@ -107,10 +107,10 @@
         </td>
     </tr>
     </table>
-    <div style="margin-left:120px">
+   <%-- <div style="margin-left:120px">
         <asp:Button ID="deleteBtn" runat="server" Text="Delete" Font-Bold="true" Font-Size="10" Font-Names="helvetica" Width="55" Height="30" BackColor="white" ForeColor="#6F707A" OnClick="deleteBtn_Click"/>
         <asp:Button ID="editBtn" runat="server" Text="Edit" Font-Bold="true" Font-Size="10" Font-Names="helvetica" Width="55" Height="30" BackColor="white" ForeColor="#6F707A" OnClick="editBtn_Click"/>
-    </div>
+    </div>--%>
         
 
     

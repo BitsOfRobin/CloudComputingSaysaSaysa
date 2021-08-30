@@ -15,7 +15,7 @@ namespace Cloud
 {
     public partial class showImage : System.Web.UI.Page
     {
-        string strConnString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        string strConnString = "Server=tcp:zleandb.database.windows.net,1433;Initial Catalog = ZLeanDatabase; Persist Security Info=False;User ID = zlean; Password=Martindb5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30";
         string str;
         SqlCommand com;
         protected void Page_Load(object sender, EventArgs e)
