@@ -29,7 +29,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-                     <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Please enter valid product name" ControlToValidate="txtzlNameAdd" CssClass="error" Display="Dynamic"></asp:RequiredFieldValidator>--%>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Please enter valid product name" ControlToValidate="txtzlNameAdd" CssClass="error" Display="Dynamic"></asp:RequiredFieldValidator>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow Width="1400px">
@@ -46,7 +46,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-                  <%--   <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Please enter valid price" ControlToValidate="txtzlPriceAdd" CssClass="error" Display="Dynamic"></asp:RequiredFieldValidator>--%>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Please enter valid price" ControlToValidate="txtzlPriceAdd" CssClass="error" Display="Dynamic"></asp:RequiredFieldValidator>
                 </asp:TableCell>
             </asp:TableRow>
              <asp:TableRow>
@@ -55,7 +55,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-                <%--     <asp:RangeValidator ID="RangeValidator4" runat="server" ErrorMessage="Maximum price is 10 million , minimum is RM10" ControlToValidate="txtzlPriceAdd" CssClass="error" Display="Dynamic" MaximumValue="10000000" MinimumValue="10" Type="Currency"></asp:RangeValidator>--%>
+                     <asp:RangeValidator ID="RangeValidator4" runat="server" ErrorMessage="Maximum price is 10 million , minimum is RM10" ControlToValidate="txtzlPriceAdd" CssClass="error" Display="Dynamic" MaximumValue="10000000" MinimumValue="10" Type="Currency"></asp:RangeValidator>
                 </asp:TableCell>
             </asp:TableRow>
             <%--    <asp:TableRow width="1400px" >
@@ -81,7 +81,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-                <%--     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Please enter valid description" ControlToValidate="txtzlDesAdd" CssClass="error" Display="Dynamic" EnableTheming="False"></asp:RequiredFieldValidator>--%>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Please enter valid description" ControlToValidate="txtzlDesAdd" CssClass="error" Display="Dynamic" EnableTheming="False"></asp:RequiredFieldValidator>
                 </asp:TableCell>
             </asp:TableRow>
             <%--<asp:TableRow Width="1400px">
@@ -142,7 +142,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-              <%--           <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="Please enter valid quantity" ControlToValidate="txtzlQtyAdd" CssClass="error" Display="Dynamic" EnableTheming="False"></asp:RequiredFieldValidator>--%>
+                         <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="Please enter valid quantity" ControlToValidate="txtzlQtyAdd" CssClass="error" Display="Dynamic" EnableTheming="False"></asp:RequiredFieldValidator>
                 </asp:TableCell>
             </asp:TableRow>
              <asp:TableRow>
@@ -151,7 +151,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-              <%--             <asp:RangeValidator ID="RangeValidator6" runat="server" ErrorMessage="Maximum quantity is 100" ControlToValidate="txtzlQtyAdd" CssClass="error" Display="Dynamic" MaximumValue="100" MinimumValue="1" Type="Integer"></asp:RangeValidator>--%>
+                           <asp:RangeValidator ID="RangeValidator6" runat="server" ErrorMessage="Maximum quantity is 100" ControlToValidate="txtzlQtyAdd" CssClass="error" Display="Dynamic" MaximumValue="100" MinimumValue="1" Type="Integer"></asp:RangeValidator>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow Width="1400px">
@@ -176,7 +176,7 @@
 
 
 
-        <asp:Table ID="TablepAdd" runat="server" Height="481px" Width="1668px" ForeColor="Black" Font-Size="Larger">
+       <%-- <asp:Table ID="TablepAdd" runat="server" Height="481px" Width="1668px" ForeColor="Black" Font-Size="Larger">
             <asp:TableRow>
                 <asp:TableCell HorizontalAlign="Center" Width="500px" ColumnSpan="3">
                     <asp:Label ID="lbl6" runat="server" Text="15 Days of Appreciation period" CssClass="labelzl1"></asp:Label>
@@ -206,7 +206,7 @@
                     <asp:Image ID="Imagez5" runat="server" ImageUrl="~/assets/art1.jpg" Width="400px" Height="386px" />
                 </asp:TableCell>
             </asp:TableRow>
-        </asp:Table>
+        </asp:Table>--%>
 
   
 

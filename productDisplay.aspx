@@ -45,7 +45,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-                    <%-- <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Please enter valid product name" ControlToValidate="txtzlName" CssClass="error" Display="Dynamic"></asp:RequiredFieldValidator>--%>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Please enter valid product name" ControlToValidate="txtzlName" CssClass="error" Display="Dynamic"></asp:RequiredFieldValidator>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow Width="1400px">
@@ -65,7 +65,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-                    <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Please enter valid price" ControlToValidate="txtzlPrice" CssClass="error" Display="Dynamic"></asp:RequiredFieldValidator>--%>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Please enter valid price" ControlToValidate="txtzlPrice" CssClass="error" Display="Dynamic"></asp:RequiredFieldValidator>
 
                 </asp:TableCell>
             </asp:TableRow>
@@ -76,7 +76,7 @@
 
                 <asp:TableCell>
                     
-                   <%-- <asp:RangeValidator ID="RangeValidator2" runat="server" ErrorMessage="Maximum price is 10 million , minimum is RM1" ControlToValidate="txtzlPrice" CssClass="error" Display="Dynamic" MaximumValue="10000000" MinimumValue="10" Type="Currency"></asp:RangeValidator>--%>
+                    <asp:RangeValidator ID="RangeValidator2" runat="server" ErrorMessage="Maximum price is 10 million , minimum is RM1" ControlToValidate="txtzlPrice" CssClass="error" Display="Dynamic" MaximumValue="10000000" MinimumValue="10" Type="Currency"></asp:RangeValidator>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow Width="1400px">
@@ -105,7 +105,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-                   <%-- <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Please enter valid description" ControlToValidate="txtzlDes" CssClass="error" Display="Dynamic" EnableTheming="False"></asp:RequiredFieldValidator>--%>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Please enter valid description" ControlToValidate="txtzlDes" CssClass="error" Display="Dynamic" EnableTheming="False"></asp:RequiredFieldValidator>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow Width="1400px">
@@ -135,7 +135,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-                   <%-- <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Please enter valid quantity" ControlToValidate="txtzlQty" CssClass="error" Display="Dynamic" EnableTheming="False"></asp:RequiredFieldValidator>--%>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Please enter valid quantity" ControlToValidate="txtzlQty" CssClass="error" Display="Dynamic" EnableTheming="False"></asp:RequiredFieldValidator>
                 </asp:TableCell>
             </asp:TableRow>
              <asp:TableRow>
@@ -144,7 +144,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-                   <%-- <asp:RangeValidator ID="RangeValidator3" runat="server" ErrorMessage="Maximum quantity is 100" ControlToValidate="txtzlQty" CssClass="error" Display="Dynamic" MaximumValue="100" MinimumValue="1" Type="Integer"></asp:RangeValidator>--%>
+                    <asp:RangeValidator ID="RangeValidator3" runat="server" ErrorMessage="Maximum quantity is 100" ControlToValidate="txtzlQty" CssClass="error" Display="Dynamic" MaximumValue="100" MinimumValue="1" Type="Integer"></asp:RangeValidator>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow Width="1400px">
