@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-        @import url('./Art_Moments/artmoments-fonts.css');
+        
 
         .heading {
             margin-top: 40px;
